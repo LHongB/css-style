@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    div{
+      border: solid 1px black;
+      height: 100%;
+    }
+     .demo1,.demo2{
+       height: 600px;
+       padding: 20px;
+       overflow:hidden;
+     }
+     .demo1 .left, .demo2 .left{
+        width: 120px;
+        float: left;
+      }
+      .demo1 .right {
+        margin-left: 120px;
+      }   
+      .demo2 .right{
+        width: calc(100% - 120px);
+        float: left;
+      }
+      .clear{
+        clear: both;
+      }
+      /* .demo2 */
+  </style>
+  <title>左边定宽，右边自适应方案：float + margin，float + calc</title>
+</head>
+<body>
+  <!-- 方案1 -->
+   <div class="demo1">
+     <div class="left">
+     
+     </div>
+     <div class="right">
+
+     </div>
+   </div>
+   <!-- 方案2 -->
+   <div class="demo2"> 
+      <div class="left"></div>
+      <div class="right"></div>
+      <div class="clear"></div>
+   </div>
+</body>
+</html>

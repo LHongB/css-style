@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    .list-m {
+      padding-left: 200px;
+      position: relative;
+    }
+
+    .list-m .list-info {
+      width: 180px;
+      height: 218px;
+      border-radius: 5px;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .list-m .list-info:hover .spare {
+      opacity: .9;
+    }
+
+    .spare {
+      height: 100%;
+      position: relative;
+      transition: opacity .2s;
+    }
+
+    .info-cover {
+      position: absolute;
+      z-index: 3;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    .link {
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .p1 {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+    }
+
+    .p2 {
+      padding: 20px 0 30px;
+      font-size: 18px;
+    }
+  </style>
+  <style>
+    .imgshow-m {
+      width: 103%;
+    }
+    .list {
+      width: 245px;
+      -webkit-transition: all .2s;
+      transition: all .2s;
+      float: left;
+      margin: 0 20px 20px 0;
+    }
+    .slate5-shadow:hover{
+      -webkit-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1) !important;
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    }
+    .slate5-shadow[data-v-5954443c] {
+    transition: box-shadow .2s, -webkit-transform .2s;
+    -webkit-transition: -webkit-box-shadow .2s, -webkit-transform .2s;
+    transition: -webkit-box-shadow .2s, -webkit-transform .2s;
+    transition: box-shadow .2s, transform .2s;
+    transition: box-shadow .2s, transform .2s, -webkit-box-shadow .2s, -webkit-transform .2s;
+    transition: box-shadow .2s, transform .2s, -webkit-transform .2s;
+}
+    .list-img {
+      position: relative;
+    }
+
+    .list-img:hover .play-cover {
+      opacity: 1;
+    }
+
+    .list-img:hover .play-cover::before {
+      transform: scale(1);
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 180px;
+    }
+
+    .show-img {
+      display: block;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 0 0 1px #ddd;
+    }
+
+    .play-cover::before {
+      content: "";
+      left: 50%;
+      top: 50%;
+      margin: -30px 0 0 -30px;
+      width: 60px;
+      height: 60px;
+      transition: all .25s;
+      background: url(https://js.huke88.com/assets/revision/images/hk_new_index_icons3.png) 0 -115px;
+      position: absolute;
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+    }
+
+    .show-img:hover .time-length {
+      display: none;
+    }
+
+    .play-cover {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .35);
+      opacity: 0;
+      transition: all .25s;
+    }
+
+    .time-length {
+      display: block;
+      padding: 0 6px;
+      height: 15px;
+      line-height: 15px;
+      background: rgba(0, 0, 0, .25);
+      font-size: 12px;
+      color: #fff;
+      border-radius: 4px;
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      transition: all .25s ease-in;
+    }
+  </style>
+  <title>hover阴影浮动效果</title>
+</head>
+
+<body>
+  <div class="list-m clearfix imgshow-m">
+    <div class="list-info">
+      <!-- 背景零件 -->
+      <div class="spare type-syhq"><span class="sp1"></span><span class="sp2"></span><span class="sp3"></span><span
+          class="sp4"></span><span class="sp5"></span><span class="sp6"></span></div>
+      <div class="info-cover"><a href="https://huke88.com/photography/9-0-0-0-0-0-0-16/" class="link" target="_blank">
+          <p class="p1">摄影艺术</p>
+          <p class="p2">共有 2159 节课</p>
+          <p class="p3">查看更多教程 &gt;</p>
+        </a></div>
+    </div>
+    <dd class="list_container">
+      <div class="list fl">
+        <div class="list-img"><a class="show-img slate5-shadow" target="_blank" href="https://huke88.com/course/24130.html?recpos=1"
+            onclick="videoExposureLogic(24130, 1, 'click_times');intentionClick(this, 0 + 1, 0);"><img class="lazy" alt="PS-泳装元气少女清新人像的摄影后期教程"
+              data-exposure-id="24130" src="https://pic.huke88.com/product-make/cover/2018-09-09/37EA36BF-DB11-E95B-BDEB-B615BBC7F849.jpg!/fw/500/format/webp"
+              data-original="https://pic.huke88.com/product-make/cover/2018-09-09/37EA36BF-DB11-E95B-BDEB-B615BBC7F849.jpg!/fw/500/format/webp"
+              style="display: block;"><span class="play-cover"></span><span class="time-length">18分50秒</span></a></div>
+        <div class="img-name clearfix"><a href="https://huke88.com/course/24130.html?recpos=1" class="name-link fl"
+            onclick="videoExposureLogic(24130, 1, 'click_times');intentionClick(this, 0 + 1, 0);" target="_blank">PS-泳装元气少女清新人像的摄影后期教程</a></div>
+        <div class="img-data clearfix"><a href="https://huke88.com/photography/9-0-0-0-0-0-0-16/" target="_blank" class="class-type fl type-syhq"
+            data-test="9">
+            摄影 </a><span class="level fl">初级练习</span><span class="learn-num fr">2.3万人已学</span></div>
+      </div>
+      <div class="list fl">
+        <div class="list-img"><a class="show-img slate5-shadow" target="_blank" href="https://huke88.com/course/23790.html?recpos=2"
+            onclick="videoExposureLogic(23790, 1, 'click_times');intentionClick(this, 1 + 1, 0);"><img class="lazy" alt="PS-杂志风商业人像快速调色修图详解"
+              data-exposure-id="23790" src="https://pic.huke88.com/product-make/cover/2018-09-09/23CB42F0-F91F-312B-7684-64BD03FA516E.jpg!/fw/500/format/webp"
+              data-original="https://pic.huke88.com/product-make/cover/2018-09-09/23CB42F0-F91F-312B-7684-64BD03FA516E.jpg!/fw/500/format/webp"
+              style="display: block;"><span class="play-cover"></span><span class="time-length">30分40秒</span></a></div>
+        <div class="img-name clearfix"><a href="https://huke88.com/course/23790.html?recpos=2" class="name-link fl"
+            onclick="videoExposureLogic(23790, 1, 'click_times');intentionClick(this, 1 + 1, 0);" target="_blank">PS-杂志风商业人像快速调色修图详解</a></div>
+        <div class="img-data clearfix"><a href="https://huke88.com/photography/9-0-0-0-0-0-0-16/" target="_blank" class="class-type fl type-syhq"
+            data-test="9">
+            摄影 </a><span class="level fl">中级拔高</span><span class="learn-num fr">1.6万人已学</span></div>
+      </div>
+      <div class="list fl">
+        <div class="list-img"><a class="show-img slate5-shadow" target="_blank" href="https://huke88.com/course/25299.html?recpos=3"
+            onclick="videoExposureLogic(25299, 1, 'click_times');intentionClick(this, 2 + 1, 0);"><img class="lazy" alt="双十一电商女装拍摄"
+              data-exposure-id="25299" src="https://pic.huke88.com/video/cover/2018-10-11/E8783055-23EB-D756-1746-2D013465D879.jpg!/fw/500/format/webp"
+              data-original="https://pic.huke88.com/video/cover/2018-10-11/E8783055-23EB-D756-1746-2D013465D879.jpg!/fw/500/format/webp"
+              style="display: block;"><span class="play-cover"></span><span class="time-length">16分41秒</span></a></div>
+        <div class="img-name clearfix"><a href="https://huke88.com/course/25299.html?recpos=3" class="name-link fl"
+            onclick="videoExposureLogic(25299, 1, 'click_times');intentionClick(this, 2 + 1, 0);" target="_blank">双十一电商女装拍摄</a></div>
+        <div class="img-data clearfix"><a href="https://huke88.com/photography/9-0-0-0-0-0-0-16/" target="_blank" class="class-type fl type-syhq"
+            data-test="9">
+            摄影 </a><span class="level fl">中级拔高</span><span class="learn-num fr">2971人已学</span></div>
+      </div>
+      <div class="list fl">
+        <div class="list-img"><a class="show-img slate5-shadow" target="_blank" href="https://huke88.com/course/8502.html?recpos=4"
+            onclick="videoExposureLogic(8502, 1, 'click_times');intentionClick(this, 3 + 1, 0);"><img class="lazy" alt="摄影前期-曝光三要素的介绍"
+              data-exposure-id="8502" src="https://pic.huke88.com/video/cover/2018-09-29/135CF13C-F2DB-91E6-10C5-E03F621B887D.jpg!/fw/500/format/webp"
+              data-original="https://pic.huke88.com/video/cover/2018-09-29/135CF13C-F2DB-91E6-10C5-E03F621B887D.jpg!/fw/500/format/webp"
+              style="display: block;"><span class="play-cover"></span><span class="time-length">16分24秒</span></a></div>
+        <div class="img-name clearfix"><a href="https://huke88.com/course/8502.html?recpos=4" class="name-link fl"
+            onclick="videoExposureLogic(8502, 1, 'click_times');intentionClick(this, 3 + 1, 0);" target="_blank">摄影前期-曝光三要素的介绍</a></div>
+        <div class="img-data clearfix"><a href="https://huke88.com/photography/9-0-0-0-0-0-0-16/" target="_blank" class="class-type fl type-syhq"
+            data-test="9">
+            摄影 </a><span class="level fl">初级练习</span><span class="learn-num fr">7.8万人已学</span></div>
+      </div>
+    </dd>
+    <dd></dd>
+  </div>
+</body>
+
+</html>

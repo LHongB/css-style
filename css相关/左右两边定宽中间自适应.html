@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    div{
+      border: solid 1px black;
+    }
+     .wrap,.wrap1,.wrap2{
+       margin-bottom: 20px;
+       width: 100%;
+       height: 200px;
+     }
+     .wrap1 > div{
+       border: 0;
+     }
+     .wrap > div,.wrap1 > div,.wrap2 > div{
+       height: 100%;
+     }
+     .wrap .left{
+       width: 120px;
+       float: left;
+     }
+     .wrap .right{
+       float: right;
+       width: 120px;
+     }
+     .wrap .center{
+       margin: 0 120px;
+     }
+     .wrap1 .left{
+       background: black;
+       width: 120px;
+       float: left;
+     }
+     .wrap1 .right{
+       background: red;
+       float: right;
+       width: 120px;
+     }
+     .wrap1 .center{
+       background: green;
+       width: calc(100% - 240px);
+       margin-left: 120px;
+     }
+     .wrap2{
+       display: flex;
+     }
+     .wrap2 .left{
+       width:120px; 
+     }
+     .wrap2 .right{
+       width: 120px;
+     }
+     .center{
+       flex: 1;
+     }
+  </style>
+  <title> 左右两边定宽，中间自适应：float，float + calc, 圣杯布局（设置BFC，margin负值法），flex</title>
+</head>
+<body>
+  <!-- 方案1 -->
+  <div class="wrap">
+      <div class="left"></div>
+      <div class="right"></div>
+      <div class="center"></div>
+  </div>
+  <!-- 方案2 -->
+  <div class="wrap1">
+     <div class="left"></div>
+     <div class="right"></div>
+     <div class="center"></div>
+  </div>
+  <!-- 方案3 -->
+  <div class="wrap2">
+     <div class="left"></div>
+     <div class="center"></div>
+     <div class="right"></div>   
+  </div>
+</body>
+</html>

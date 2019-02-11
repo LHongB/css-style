@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    .slider {
+      width: 228px !important;
+      height: 270px;
+      border-radius: 5px;
+      background: #f0f6fb;
+      position: relative;
+      float: left;
+      margin: 40px 20px 0 0;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      overflow: hidden;
+    }
+
+    .slider .cover-info {
+      position: absolute;
+      left: 0;
+      top: 200px;
+      background: rgba(0, 0, 0, .5);
+      width: 100%;
+      color: #fff;
+      transition: top .3s;
+      height: 100%;
+    }
+
+    .des {
+      text-align: center;
+    }
+
+    .con {
+      padding: 8px 20px 0;
+      line-height: 20px;
+      font-size: 12px;
+      max-height: 148px;
+      overflow: hidden;
+      color: #fff;
+    }
+
+    .name {
+      font-size: 18px;
+      padding-top: 5px;
+      text-align: center;
+      transition: padding .2s;
+    }
+
+    .slider:hover .cover-info {
+      top: 0;
+    }
+
+    .slider:hover .cover-info .name {
+      padding-top: 30px;
+    }
+  </style>
+  <title>hover上滑效果</title>
+</head>
+
+<body>
+  <div class="slider">
+    <router-link to="aaa">
+      <img src="https://pic.huke88.com/image/000/000/002/E10BE202-022C-8854-37DD-6F66C1604DB2.jpg" alt="">
+      <span class="cover-info">
+        <p class="name">Nemanja Sekulic</p>
+        <p class="des">魔幻合成大师</p>
+        <p class="con">Nemanja Sekulic拥有18年设计创作经历，是一名摄影师、数字艺术家，同时从事教育工作。 18年来服务的客户遍及世界各地，设计作品也涉足各行各业。
+          一直对魔术和科幻感兴趣，讲师发布的单个教学视频播放量高达60万人次。</p>
+      </span>
+    </router-link>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    .refresh-btn {
+      border-radius: 5px;
+      transition: all .2s;
+      line-height: 22px;
+      background: #fff;
+      color: #666;
+      text-align: center;
+      cursor: pointer;
+      display: inline-block;
+      width: 160px;
+      height: 40px;
+      border: 1px #ddd solid;
+      line-height: 38px;
+    }
+
+    i {
+      display: inline-block;
+      width: 15px;
+      height: 18px;
+      margin-right: 10px;
+      background: url(../static/img/index-icon.v4.png) -162px -49px;
+      vertical-align: -4px;
+      transition: -webkit-transform .3s;
+      transition: transform .3s;
+      transition: transform .3s, -webkit-transform .3s;
+    }
+
+    .refresh-btn:hover {
+      background: #ffd500;
+      border-color: #ffd500;
+      color: #333;
+    }
+
+    .refresh-btn:hover i {
+      background-position: -162px -70px;
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  </style>
+  <title>hover刷新按钮</title>
+</head>
+
+<body>
+  <div class="refresh-btn">
+    <i></i>
+    换一批教程
+  </div>
+</body>
+
+</html>
